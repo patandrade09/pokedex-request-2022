@@ -38,6 +38,7 @@ html, body {
     font-family: 'Bit';
     height: 80vh;
     font-weight: 500;
+    margin-left:5em
 }
 
 .card{
