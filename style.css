@@ -1,66 +1,77 @@
-@import url('http://fonts.cdnfonts.com/css/pokemon-hollow');
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
-/* .card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:flex-start;
+@font-face{
+    font-family: 'Bit';
+    src: url('Pixeboy-z8XGD.ttf') format('truetype')
 }
 
-.inserts, .resultsPokemon{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Roboto', sans-serif;
-} */
-body {
-    margin-top: 100px;
-    margin-bottom:100px
+header{
+    font-size: 30px;
+    font-family: 'Bit';
+    background-color:#FBCA1F;
+    padding:30px
 }
 
+.pokeball{
+    font-size: medium;
+    float: right;
+    max-width:3em;
+    margin-bottom:20px;
+    margin-right:10px;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+    background: rgb(14,3,217);
+    background: linear-gradient(90deg, rgba(14,3,217,1) 0%, rgba(84,84,195,1) 35%, rgba(38,192,223,1) 100%);
+}
+
+.logo{
+    margin-top: 3em;
+}
 .content{
     display: flex;
     justify-content: center;
     align-items:center;
     align-content: center;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Bit';
     height: 80vh;
     font-weight: 500;
 }
 
-
-
-
 .card{
     background-color:#FFDE00;
-    box-shadow: 2px 10px 10px 2px #787878;
+    box-shadow: 2px 10px 10px 2px #000000;
     border-radius: 10px;
     padding-left: 4em;
     padding-right: 4em;
     padding-bottom: 2em;
-    height:65vh
+    height:60vh;
+    border: 2px solid black;
 }
 
 .imgPokemon{ 
     background: center/cover;
     height: 100px;
     width: 100%; 
+    margin-left:7.5em;
+    margin-top:0.8em
 }
 
 .titlePokemon {
-    font-family: 'Pokemon Hollow', sans-serif;
+    
     display: flex;
     justify-content: center;
     align-items:center;
     align-content: center;
     font-size: 3rem;
+
 }
 
-img{
-    margin-left: 130px;  
-    margin-right:130px;
+.logo{
+    margin-left: 100px;  
+    margin-right:100px;
     max-width:130px;
     max-height:700px;
     padding-bottom: 28px;
@@ -76,19 +87,16 @@ input{
     margin-top: 1vh;
     margin-bottom:1vh;
 	display: inline-block;
-	color: #f4f2ca;
+	color: #000000;
 	text-align: center;
-	background-color: #B3A125;
+	background-color: #ebde8c;
 	padding: .9em 1.8em;
-	border: none;
-	cursor:text;
-	outline: none;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	-webkit-transition: all .1s linear;
-	-moz-transition: all .1s linear;
-	transition: all .1s linear;
+	border: 2px solid black;
+    border-radius: 0.5em;
+    box-shadow: 0.1em 0.1em;
+    font-family: 'Bit';
+    font-size:14px;
+
 }
 
 .bottomCard{
@@ -99,31 +107,86 @@ input{
     line-height: 5px
 }
 
-.btnPokemon{
-    background-color: #f4f2ca;
-}
+button {
+    background: #FBCA1F;
+    font-family: inherit;
+    padding: 0.3em 0.6em;
+    font-weight: 0;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor:pointer;
+   }
+   
+   button:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+   }
+   
+   button:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+   }
+   footer{
+       background-color: #d82525;
+       position: absolute;
+       bottom: 0;
+       color: #FFF;
+       width: 100%;
+       height: 100px;	
+       text-align: center;
+       line-height: 100px;
+   }
 
 @media screen and (max-width: 1300px){
     .card {
-        background-color: #F88E00;
+        background-color: #FFDE00;
         box-shadow: 1.5px 8px 8px 1.5px #787878;
         border-radius: 8px;
         padding-left: 3.5em;
         padding-right: 3.5em;
         margin-bottom: 1.5em;
-        height: 80vh;
+        height:60vh;
         
+    }
+    html, body {
+        padding: 0;
+        margin: 0;
+        min-height: 100%;
+        background: rgb(14,3,217);
+        background: linear-gradient(90deg, rgba(14,3,217,1) 0%, rgba(84,84,195,1) 35%, rgba(38,192,223,1) 100%);
+    }
+    footer{
+        background-color: #d82525;
+        position: absolute;
+        bottom: 0;
+        color: #FFF;
+        width: 100%;
+        height: 100px;	
+        text-align: center;
+        line-height: 100px;
+    }
+
+    .pokeball{
+        font-size: medium;
+        float: right;
+        max-width:3em;
+        margin-bottom:20px;
+        margin-right:10px;
     }
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
     .card {
-        background-color: #9f9;
-        box-shadow: 0.5px 6px 6px 1px #787878;
-        border-radius: 6px;
-        margin-bottom: 1em;
-        height: 70vh;
+        background-color: #FFDE00;
+        box-shadow: 1.5px 8px 8px 1.5px #787878;
+        border-radius: 8px;
+        padding-left: 3.5em;
+        padding-right: 3.5em;
+        margin-bottom: 1.5em;
+        height:60vh;
     }
 
     .content{
@@ -131,10 +194,36 @@ input{
     justify-content: center;
     align-items:center;
     align-content: center;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Bit';
     height: 80vh;
-    font-weight: 500;
+    font-weight: 600;
+    }
 
-    
+    html, body {
+        padding: 0;
+        margin: 0;
+        min-height: 100%;
+        background: rgb(14,3,217);
+        background: linear-gradient(90deg, rgba(14,3,217,1) 0%, rgba(84,84,195,1) 35%, rgba(38,192,223,1) 100%);
+    }
+    footer{
+        background-color: #d82525;
+        position: absolute;
+        bottom: 0;
+        color: #FFF;
+        width: 100%;
+        height: 100px;	
+        text-align: center;
+        line-height: 100px;
+    }
+
+    .pokeball{
+        font-size: medium;
+        float: right;
+        max-width:3em;
+        margin-bottom:20px;
+        margin-right:10px;
+    }
 }
-}
+
+

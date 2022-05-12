@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex</title>
-    
+    <title>Pokedex</title>  
     <link rel="stylesheet" href="./style.css">
     <script src="app.js" defer></script>
     </head>
 <body>
+    <header>
+        <img src="./pokeball.png" alt="" class="pokeball">
+        Welcome to your PokeDex
+    </header>
     <div class="content">
         <div class="card">
-            <h1 class="titlePokemon">Pokedex</h1>
+            <img src="./pokemon-logo-8.png" alt="" class="logo">
             <div class="topCard">
-                <label for="input">Insert a Pokemon</label>
+                <label for="input">Insert a Pokemon name or ID</label>
                 <input class="inputPokemon" type="text" id="searchPokemon" value="bulbasaur">
-                <button class="btnPokemon" id="btnPokemon">Search</button>
+                <button class="" id="btnPokemon">Search</button>
             </div>
             <div class="imgPokemon" id="imgPokemon"></div>
             <div class="bottomCard">
@@ -28,6 +31,14 @@
             </div>
             
         </div>
-    </div>   
+    </div>
+    <footer>
+        <div class="footerContent">
+            Linkedin
+            GitHub
+            PokeAPI
+        </div>
+    </footer>
 </body>
+
 </html>
