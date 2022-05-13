@@ -30,6 +30,8 @@ html, body {
 .logo{
     margin-top: 3em;
 }
+
+
 .content{
     display: flex;
     justify-content: center;
@@ -37,7 +39,6 @@ html, body {
     align-content: center;
     font-family: 'Bit';
     height: 80vh;
-    font-weight: 500;
     margin-left:5em
 }
 
@@ -48,7 +49,6 @@ html, body {
     padding-left: 4em;
     padding-right: 4em;
     padding-bottom: 2em;
-    height:60vh;
     border: 2px solid black;
 }
 
@@ -103,7 +103,6 @@ input{
 .bottomCard{
     display:flex;
     flex-direction: column;
-    font-weight: 500;
     font-size: 1em;
     line-height: 5px
 }
@@ -120,27 +119,35 @@ button {
     cursor:pointer;
    }
    
-   button:hover {
+button:hover {
     transform: translate(-0.05em, -0.05em);
     box-shadow: 0.15em 0.15em;
-   }
+}
    
-   button:active {
+button:active {
     transform: translate(0.05em, 0.05em);
     box-shadow: 0.05em 0.05em;
-   }
-   footer{
-       background-color: #d82525;
-       position: absolute;
-       bottom: 0;
-       color: #FFF;
-       width: 100%;
-       height: 100px;	
-       text-align: center;
-       line-height: 100px;
-   }
+}
 
-@media screen and (max-width: 1300px){
+
+
+@media screen and (min-width: 900px){
+
+    header{
+        font-size: 30px;
+        font-family: 'Bit';
+        background-color:#FBCA1F;
+        padding:0.7em;
+    }
+
+    .bottomCard{
+        display:flex;
+        flex-direction: column;
+        font-weight: 500;
+        font-size: 1em;
+        line-height: 0.4px
+    }
+
     .card {
         background-color: #FFDE00;
         box-shadow: 1.5px 8px 8px 1.5px #787878;
@@ -148,38 +155,29 @@ button {
         padding-left: 3.5em;
         padding-right: 3.5em;
         margin-bottom: 1.5em;
-        height:60vh;
+        height:67vh;
         
     }
+
     html, body {
         padding: 0;
         margin: 0;
-        min-height: 100%;
         background: rgb(14,3,217);
         background: linear-gradient(90deg, rgba(14,3,217,1) 0%, rgba(84,84,195,1) 35%, rgba(38,192,223,1) 100%);
-    }
-    footer{
-        background-color: #d82525;
-        position: absolute;
-        bottom: 0;
-        color: #FFF;
-        width: 100%;
-        height: 100px;	
-        text-align: center;
-        line-height: 100px;
-    }
-
-    .pokeball{
-        font-size: medium;
-        float: right;
-        max-width:3em;
-        margin-bottom:20px;
-        margin-right:10px;
     }
 
 }
 
-@media screen and (max-width: 400px) {
+
+@media screen and (min-width: 400px) {
+
+    .bottomCard{
+        display:flex;
+        flex-direction: column;
+        font-weight: 500;
+        font-size: 1em;
+        line-height: 0.1px
+    }
     .card {
         background-color: #FFDE00;
         box-shadow: 1.5px 8px 8px 1.5px #787878;
@@ -187,7 +185,7 @@ button {
         padding-left: 3.5em;
         padding-right: 3.5em;
         margin-bottom: 1.5em;
-        height:60vh;
+        height:70vh;
     }
 
     .content{
@@ -197,7 +195,8 @@ button {
     align-content: center;
     font-family: 'Bit';
     height: 80vh;
-    font-weight: 600;
+    margin-top:30px;
+    margin-bottom: 30px;
     }
 
     html, body {
@@ -207,23 +206,12 @@ button {
         background: rgb(14,3,217);
         background: linear-gradient(90deg, rgba(14,3,217,1) 0%, rgba(84,84,195,1) 35%, rgba(38,192,223,1) 100%);
     }
-    footer{
-        background-color: #d82525;
-        position: absolute;
-        bottom: 0;
-        color: #FFF;
-        width: 100%;
-        height: 100px;	
-        text-align: center;
-        line-height: 100px;
-    }
 
     .pokeball{
         font-size: medium;
         float: right;
         max-width:3em;
-        margin-bottom:20px;
-        margin-right:10px;
+
     }
 }
 
